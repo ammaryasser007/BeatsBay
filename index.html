@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatsBay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- .......................................Header Section...................................... -->
+    <nav>
+        <div class="logo">BeatsBay <img src="./pics/—Pngtree—headphone vector_8129481.png" alt=""></div>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Items">Items</a></li>
+                <li><a href="#offers">Discounts</a></li>
+                <li><a href="#footer">About</a></li>
+            </ul>
+        </div>
+        <div class="spanmenu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            <div class="sub-menu" id="sub-menu">
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#Items">Items</a></div>
+                    <div><a href="#offers">Discounts</a></div>
+                    <div><a href="#footer">About</a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- ........................................Hero Section....................................... -->
+    <div class="Hero" id="Hero">
+        <div class="content">
+            <h1>Hear Every Beat. Feel Every Note</h1>
+        </div>
+    </div>
+
+    <section class="offers" id="offers">
+        <div class="discounts">
+            <h1>Don't Miss our</h1>
+            <h2>70% OFF </h2>
+            <p>"Find your rhythm, make it yours."</p>
+        </div>
+        <div class="product-gallery">
+            <div class="mySlides fade"><img src="./pics/pngwing.com (8).png" alt=""></div>
+            <div class="mySlides fade"><img src="./pics/pngwing.com (9).png" alt=""></div>
+            <div class="mySlides fade"><img src="./pics/pngwing.com (3).png" alt=""></div>
+            <div class="mySlides fade"><img src="./pics/pngwing.com (7).png" alt=""></div>
+            <div class="mySlides fade"><img src="./pics/pngwing.com (11).png" alt=""></div>
+        </div>
+    </section>
+    <!-- ..................................................Items Section............................. -->
+    <section class="Items" id="Items">
+        <div class="items-header">
+            <h1>YOUR NEXT HIT STARTS HERE</h1>
+        </div>
+        <div class="items-filter">
+            <div><h5 onclick="displayAllElements()">All Categories</h5></div>
+            <div><h5 onclick="displayWaveWare()">WaveWare</h5></div>
+            <div><h5 onclick="displaySonicNest()">SonicNest</h5></div>
+            <div><h5 onclick="displayPulsePods()">PulsePods</h5></div>
+            <div><h5 onclick="displayAuraTunes()">AuraTunes</h5></div>
+            <div><h5 onclick="displaySoundScape()">SoundScape</h5></div>
+            <div><h5 onclick="displayVibeVault()">Vibe Vault</h5></div>
+            <div><h5 onclick="displayHeadphonix()">Headphonix</h5></div>
+        </div>
+        <div class="items-collection">
+            <div class="card" id="SonicNest">
+                <div class="item-img"><img src="./pics/pngwing.com (1).png" alt=""></div>
+                <div class="item-name"><p>SonicNest</p></div>
+                <div class="item-price"><p>25$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="VibeVault">
+                <div class="item-img"><img src="./pics/pngwing.com (10).png" alt=""></div>
+                <div class="item-name"><p>Vibe Vault</p></div>
+                <div class="item-price"><p>21$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="WaveWare">
+                <div class="item-img"><img src="./pics/—Pngtree—a pair of sleek bluetooth_14577971.png" alt=""></div>
+                <div class="item-name"><p>WaveWare</p></div>
+                <div class="item-price"><p>27$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="SoundScape">
+                <div class="item-img"><img src="./pics/pngwing.com (2).png" alt=""></div>
+                <div class="item-name"><p>SoundScape</p></div>
+                <div class="item-price"><p>31$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="PulsePods">
+                <div class="item-img"><img src="./pics/pngwing.com (3).png" alt=""></div>
+                <div class="item-name"><p>PulsePods X</p></div>
+                <div class="item-price"><p>26$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="SonicNest">
+                <div class="item-img"><img src="./pics/pngwing.com (4).png" alt=""></div>
+                <div class="item-name"><p>SonicNest Pro</p></div>
+                <div class="item-price"><p>35$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="PulsePods">
+                <div class="item-img"><img src="./pics/pngwing.com (5).png" alt=""></div>
+                <div class="item-name"><p>PulsePods</p></div>
+                <div class="item-price"><p>18$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="Headphonix">
+                <div class="item-img"><img src="./pics/pngwing.com (7).png" alt=""></div>
+                <div class="item-name"><p>Beats</p></div>
+                <div class="item-price"><p>40$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="PulsePods">
+                <div class="item-img"><img src="./pics/pngwing.com (6).png" alt=""></div>
+                <div class="item-name"><p>Jebra</p></div>
+                <div class="item-price"><p>22$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="AuraTunes">
+                <div class="item-img"><img src="./pics/pngwing.com (8).png" alt=""></div>
+                <div class="item-name"><p>JBL AuraTunes</p></div>
+                <div class="item-price"><p>39$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="AuraTunes">
+                <div class="item-img"><img src="./pics/pngwing.com (9).png" alt=""></div>
+                <div class="item-name"><p>AuraTunes</p></div>
+                <div class="item-price"><p>33$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="VibeVault">
+                <div class="item-img"><img src="./pics/pngwing.com (11).png" alt=""></div>
+                <div class="item-name"><p>JBL VibeVault</p></div>
+                <div class="item-price"><p>52$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="SoundScape">
+                <div class="item-img"><img src="./pics/pngwing.com (12).png" alt=""></div>
+                <div class="item-name"><p>ToneForge</p></div>
+                <div class="item-price"><p>36$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+            <div class="card" id="WaveWare">
+                <div class="item-img"><img src="./pics/pngwing.com (13).png" alt=""></div>
+                <div class="item-name"><p>SonicSphere</p></div>
+                <div class="item-price"><p>55$</p></div>
+                <div class="add-button"><button onclick="PNE(event)">Add To Cart</button></div>
+            </div>
+        </div>
+        </section>
+        
+        
+        <!-- .....................................Cart Section...................................... -->
+        
+    <section class="cart-section" id="cart-section">
+        <div class="cart-img" id="cart-img">
+            <div class="quantity" id="quantity"></div>
+            <img src="./pics/shopping-cart (2).png">
+        </div>
+        <div class="cart" id="cart">
+            
+        </div>
+    </section>
+
+    <!-- ........................................Footer Section...................................... -->
+    <section class="footer" id="footer">
+        <div id="copyright"></div>
+        <div class="social-icons">
+            <div><a href="https://github.com/ammaryasser007"><img src="./pics/github (1).png" alt=""></a></div>
+            <div><a href="https://www.linkedin.com/in/ammar-yasser-8387201ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./pics/linkedin (2).png" alt=""></a></div>
+            <div><a href="https://www.facebook.com/3emara.90?mibextid=ZbWKwL"><img src="./pics/facebook (1).png" alt=""></a></div>
+            <div><a href="mailto:ammaryasse2000@gmail.com"><img src="./pics/gmail.png" alt=""></a></div>
+        </div>
+    </section>
+    <script src="java.js"></script>
+</body>
+</html>

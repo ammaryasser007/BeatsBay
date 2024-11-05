@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins&display=swap');
+
+/* .......................................Global CSS..................................... */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:linear-gradient(0deg,black,grey,transparent);
+}
+/* ....................................Navbar........................................ */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    border-bottom: 1px solid rgba(3, 107, 139, 0.5);
+    background:linear-gradient(290deg,black,grey,transparent);
+}
+
+.logo{
+    color: rgb(3, 108, 139);
+    text-decoration: none;
+    font-family: 'Playwrite GB S', sans-serif;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 20px;
+    object-fit: cover;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 3em;
+    text-decoration: none;
+}
+
+.menu ul li a{
+    color: #a9d5ff;
+    font-weight: bold;
+}
+
+.spanmenu{
+    display: flex;
+    position: relative;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.2em;
+    cursor: pointer;
+}
+
+.spanmenu > .hamburger > span{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.sub-menu{
+    position: absolute;
+    top: 5vh;
+    text-decoration: none;
+    list-style: none;
+    width: 170px;
+    height: 200px;
+    right: -200%;
+    background:linear-gradient(121deg,black,black,darkgrey,black,transparent);
+    text-align: center;
+    z-index: 8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-menu > div {
+    border-bottom: 1px solid rgba(29, 46, 49, 0.856);
+}
+
+.sub-menu > div > a{
+    color: #a9d5ff;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.sub-menu :active{
+    display: flex;
+}
+
+
+/* ...................................Hero........................................ */
+
+.Hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./pics/pexels-jacobyclarkephoto-5249311.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.856);
+}
+
+.Hero .content{
+    position: absolute;
+    left: 5px;
+    top: 20%;
+    background-blend-mode: color-dodge;
+    color: rgb(3, 108, 139);
+    padding: 5px;
+    margin-left: 10px;
+    width: 80%;
+    height: 88%;
+}
+
+.Hero .content h1{
+    font-size: 4.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ................................Offers......................................... */
+
+.offers{
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(0deg,black,grey,transparent);
+    position: relative;
+}
+
+.discounts{
+    position: absolute;
+    left: 3%;
+    color: rgb(37, 27, 27);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+    width: 40%;
+    height: 100%;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.discounts h1{
+    font-size: 2.7em;
+    color: saddlebrown;
+}
+
+.discounts h2{
+    font-size: 4.5em;
+    color: rgba(255, 22, 22, 0.842);
+}
+
+.discounts p{
+    font-size: 2.5em;
+    color: saddlebrown;
+}
+
+.product-gallery{
+    display: flex;
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    right: 4%;
+}
+
+.product-gallery > .mySlides{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-gallery > .mySlides > img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* ......................................Items........................................ */
+
+.Items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    position: relative;
+    background: linear-gradient(151deg, black, grey, transparent);
+}
+
+.items-header{
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: #4c98e0 0px 0px 20px 10px;
+    color: #4c98e0;
+}
+
+.items-header > h1{
+    font-size: 3em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.items-filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    padding: 30px;
+}
+
+.items-filter > div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    cursor: pointer;
+    color: #B6FFFA;
+    /* box-shadow: #B6FFFA 0px 0px 20px 5px; */
+}
+
+
+/* ......................................Card Section....................................... */
+
+.items-collection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    gap: 10px;
+    background: linear-gradient(89deg, black, black, grey, black, transparent);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 210px;
+    height: 300px;
+    /*border: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: invert(1);
+    */box-shadow: #4c98e0 0px 0px 10px 0px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    margin-bottom: 1.5%;
+}
+
+.card > .item-img{
+    width: 100%;
+    height: 70%;
+}
+
+.item-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card > .item-name{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #DFF2EB;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: auto;
+}
+
+.card > .item-price{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 1.05em;
+    color: #DFF2EB;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.add-button > button{
+    background-color: #0000;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: #4c98e0;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 200);
+    border-top: 1px solid rgba(0, 0, 0, 200);
+}
+
+
+/* ....................................Cart......................................... */
+
+.cart-img{
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 10%;
+    height: 10%;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.cart-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cart-img > .quantity{
+    color: peru;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.cart{
+    width: 90%;
+    height: 40%;
+    background:linear-gradient(90deg,aliceblue,grey,white,transparent);
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.inner-card{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.inner-card > .item-img{
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.inner-card > .item-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.inner-card > .item-name{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-card > .item-price{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-card > span{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-control{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.decrease-btn{
+    width: 30%;
+    color: orange;
+    background-color: black;
+    font-weight: bolder;
+    box-shadow: yellow 0px 0px 10px;
+}
+
+.increase-btn{
+    width: 30%;
+    color: orange;
+    background-color: black;
+    font-weight: bolder;
+    box-shadow: yellow 0px 0px 10px;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    box-shadow: yellow 0px 0px 20px 1px;
+    font-weight: 500;
+}
+
+.pay-btn{
+    width: 15%;
+    color: orange;
+    background-color: black;
+    font-weight: bolder;
+    box-shadow: yellow 0px 0px 10px;
+}
+
+
+
+/* .................................footer Section................................... */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 20vh;
+    background:linear-gradient(90deg,black,grey,grey,transparent);
+    font-weight: bold;
+    width: 100%;
+}
+
+.footer > #copyright{
+    width: 30%;
+}
+
+.social-icons{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-icons > div > a > img{
+    height: 6vh;
+    object-fit: contain;
+}
+
+
+/* .................................................................................................. */
+
+
+
+/* ................Media Queries..................... */
+
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+    
+    .Hero .content{
+        width: 90%;
+        top: 20%;
+        left: 1.5%;
+    }
+
+    .Hero .content h1{
+        font-size: 2.5em;
+        background-color: rgba(255, 255, 255, 0.021);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+    .offers{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+    .discounts{
+        position: unset;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #0000;
+    }
+    
+    .discounts h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .discounts h2{
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .discounts p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .product-gallery{
+        position: unset;
+        width: 100%;
+        height: 70%;
+    }
+
+    .items-header{
+        box-shadow: #4c98e0 0px 0px 20px 2px;
+    }
+
+    .items-header > h1{
+        font-size: 1.5em;
+    }
+
+    .items-filter > div{
+        padding: 10px;
+    }
+
+    .card{
+        width: 180px;
+    }
+
+    .cart-img{
+        right: 7%;
+    }
+
+    .cart-img > .quantity{
+        font-size: 1em;
+    }
+
+    .total{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .pay-btn{
+        font-size: 1.1em;
+        width: 30%;
+    }
+
+    .quantity-control{
+        width: 25%;
+    }
+
+    .increase-btn{
+        width: 50%;
+    }
+
+    .decrease-btn{
+        width: 50%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer > #copyright{
+        font-size: 15px;
+        width: 45%;
+    }
+
+    .social-icons > div > a > img{
+        height: 4vh;
+        object-fit: contain;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
